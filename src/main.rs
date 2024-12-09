@@ -8,16 +8,12 @@ use bsp::entry;
 use defmt::*;
 use defmt_rtt as _;
 use embedded_graphics::{
-    mono_font::{
-        ascii::{FONT_6X9, FONT_7X14, FONT_8X13, FONT_9X18},
-        MonoTextStyle,
-    },
+    mono_font::{ascii::FONT_9X18, MonoTextStyle},
     pixelcolor::BinaryColor,
     prelude::*,
     text::Text,
 };
 use embedded_hal::digital::OutputPin;
-use export::display;
 use panic_probe as _;
 
 // Provide an alias for our BSP so we can switch targets quickly.

@@ -102,7 +102,11 @@ fn main() -> ! {
 
     let text_style = MonoTextStyle::new(&FONT_9X18, BinaryColor::On);
 
-    let hello_world = Text::new("Hello World!\nHello World!", Point::new(0, 10), text_style);
+    let hello_world = Text::new(
+        "Hello World!\nHello World!\nHello World!",
+        Point::new(0, 10),
+        text_style,
+    );
     let hey_jude = Text::new("Hey Jude!\nNa Na na na", Point::new(0, 10), text_style);
 
     loop {
